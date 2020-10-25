@@ -1,0 +1,56 @@
+<!--The Audience that i'm focusing on are those who like to play mindless easy games ranging from ages 7 and up.
+I chose to use Neon green dark blue, lightblue, white, and black for my color scheme.
+I choose these colors in hopes that itll apeal to the late night user, who can recognize that these are classic coding platform colors.
+The design I chose has a header with a body for the main content, a footer for with a link to my email, and a navigation bar for easy navigation.
+I placed the nav bar on the side so that It doesnt push the responsive boxes down out of sight when clicked on.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming webpage</title>
+    <link href="css/mainPage.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="css/noPrint.css" media="print"/>
+</head>
+<body>
+    <main id="main">
+        <header class="col-12 row">
+
+            <div class="col-10">
+                <h1 class="glow">BTS Beta Games</h1>
+                <h2>Beta gaming main page</h2>
+                <p>&copy; Nick Featherstone</p>
+            </div>
+
+            <aside class="col-2">
+                <p style="font-size:2em; cursor:pointer; color:lightskyblue; text-align:right; padding-right:10%;" onclick="openNav()">&#9776;</p>
+                <img class="pac" src="media/pacM.jpg" alt="responsive logo" style="min-width: 35%; max-width:70%; padding-bottom: 10%; opacity: 1; width:60px; height:60px">
+            </aside>
+
+        </header>
+        <footer class="row">
+            <h3 class="col-12">For Questions and Comments, contact: <br><a href="mailto:nicholasfeatherstone11@gmail.com">Nicholas Featherstone (nicholasfeatherstone11@gmail.com)</a></h3>
+        </footer>
+            <nav id="mySidenav" class="iconbar sidenav" style="background-color:darkslateblue;">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <p style="color: lightskyblue; font-size:20px; text-shadow: 1px 1px white; text-align: center;">Links to the beta games pages</p>
+                <ul type="square"></ul>    
+                    <li><a href="story.html"><p style="color: lightskyblue; font-size:20px; text-shadow: 1px 1px white;">Late Night Adventures With Ones Self</p></a></li>
+                    <li><a href="mazeRun.html"><p style="color: lightskyblue; font-size:20px; text-shadow: 1px 1px white;">Take a Run But Don't Hit Your Trail</p></a></li>
+                    <li><a href="mixUp.html"><p style="color: lightskyblue; font-size:20px; text-shadow: 1px 1px white;">Mix up a Puzzle Game!</p></a></li>
+                </ul>
+            </nav>
+        <div id="noprint">
+            <script>
+                function openNav() {
+                    document.getElementById("mySidenav").style.width = "200px";
+                    document.getElementById("main").style.marginleft = "200px";
+                }
+                function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                    document.getElementById("main").style.marginleft = "0";
+                }
+            </script>
+    </main>
+</body>
+</html>
