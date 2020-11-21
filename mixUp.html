@@ -1,0 +1,34 @@
+<!--So I decided to make a drag and drop puzzle using an API with jQuery. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mix up puzzle game</title>
+    <link rel="stylesheet" href="css/mixUp.css">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/trontastic/jquery-ui.css">
+   
+</head>
+<body>
+    
+    <div id="container">
+        <div id="mixed"></div>
+        <div id="fixed"></div>
+        <ul id="buttons">
+            <li><button id="startbtn">Mix'em</button></li>
+            <li><p id = "resetbtn">Refresh the page or go back to the main site.</p></li>
+        </ul>
+    </div>
+    <div id="description">
+        <h2 class="head">Description</h2>
+        <p>Click the Mix'em button to mix the puzzle up.</p>
+        <p>Once you click on the puzzle piece, you then drag it to its desired position.</p>
+        <p>Best of luck to you.</p>
+    </div>
+<script src="js/mixUp.js"></script>
+</body>
+</html>
